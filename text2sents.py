@@ -5,12 +5,12 @@ Created on Wed Feb 28 15:27:23 2018
 
 @author: siting.liang
 """
+import re
 import itertools
 from pickle_save import save, load
 import spacy
 
-import re
-from gensim.models import word2vec
+
 nlp=spacy.load("en")
 
 #path="en_wiki_new_all_sent.pickle"
@@ -95,7 +95,7 @@ def chunk(length, d=1000):
     return sizes  
 
  
-  
+"""  
 path= "en_wiki_lastest_text_200.pickle" 
 n_token=0
 text_list=load(path)
@@ -110,4 +110,5 @@ for size in chunk(length,d=1000):
     print("transformed %d sentences of unigram"%len(all_sentences_uni))
     print("got %d tokens"%n_token)
     path_save="sentences_uni_list.pickle"
-    save(path_save,all_sentences_uni)
+    save(path_save,all_sentences_uni
+"""
