@@ -1,5 +1,5 @@
 # WSI
-### semantik word sense induction projekt
+### semantic word sense induction projekt
 ## Construct Corpus 
 download wikipedia dump file
 ```bash
